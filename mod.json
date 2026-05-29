@@ -1,0 +1,36 @@
+{
+	"geode": "5.7.1",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "saritahhh.pausecountdown",
+	"name": "PauseCountdown",
+	"version": "v1.0.0",
+	"developer": "Saritahhh",
+	"description": "Get some time to react!",
+	"settings": {
+		"time-in-s": {
+			"type": "float",
+			"name": "Time (In Seconds)",
+			"description": "Time in seconds it'll take to resume the game after unpausing.",
+			"default": 3,
+			"min": 1,
+			"max": 10,
+			"control": {
+				"input": true,
+				"arrows": true,
+				"slider": true,
+				"big-arrows": true,
+				"slider-step": 0.1,
+				"arrow-step": 0.5,
+				"big-arrow-step": 1
+			}
+		}
+	},
+	"dependencies": {
+		"geode.node-ids": ">=v1.23.3"
+	}
+}
