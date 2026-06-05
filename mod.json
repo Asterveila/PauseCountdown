@@ -12,12 +12,18 @@
 	"developer": "Saritahhh",
 	"description": "Get some time to react!",
 	"settings": {
+		"enable-mod": {
+			"type": "bool",
+			"name": "Enable Mod",
+			"description": "Enables/Disables the mod.",
+			"default": true
+		},
 		"time-in-s": {
 			"type": "float",
 			"name": "Time (In Seconds)",
 			"description": "Time in seconds it'll take to resume the game after unpausing.",
 			"default": 3,
-			"min": 1,
+			"min": 0.1,
 			"max": 10,
 			"control": {
 				"input": true,

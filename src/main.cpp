@@ -48,8 +48,9 @@ class $modify(CountdownPauseLayer, PauseLayer) {
 
 	void onResume(CCObject* sender) {
 		auto fields = m_fields.self();
+		auto enabled = Mod::get()->getSettingValue<bool>("enable-mod");
 
-		if (fields->shouldActuallyResume) {
+		if (enabled || fields->shouldActuallyResume) {
 			PauseLayer::onResume(sender);
 			return;
 		}
