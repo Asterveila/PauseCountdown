@@ -36,6 +36,9 @@
 			}
 		}
 	},
+	"links": {
+		"source": "https://github.com/Asterveila/PauseCountdown"
+	},
 	"dependencies": {
 		"geode.node-ids": ">=v1.23.3"
 	}
